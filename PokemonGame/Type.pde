@@ -5,4 +5,8 @@ class Type{
     this.s=s;
   }
   
+  String getS(){
+    return s;
+  }
+  
 }

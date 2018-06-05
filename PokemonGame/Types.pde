@@ -1,27 +1,34 @@
-public class Types{
-public ArrayList<Type> t= new ArrayList<Type>();
+public class Types {
+  public ArrayList<Type> t= new ArrayList<Type>();
 
-public Types(){
-  t.add(new Type("Fire"));
-  t.add(new Type("Grass"));
-  t.add(new Type("Water"));
-  t.add(new Type("Electric"));
-  t.add(new Type("Ground"));
-  t.add(new Type("Rock"));
-  t.add(new Type("Steel"));
-  t.add(new Type("Flying"));
-  t.add(new Type("Ice"));
-  t.add(new Type("Ghost"));
-  t.add(new Type("Dark"));
-  t.add(new Type("Bug"));
-  t.add(new Type("Psychic"));
-  t.add(new Type("Normal"));
-  t.add(new Type("Dragon"));
-  t.add(new Type("Fairy"));
-  t.add(new Type("Poison"));
-  t.add(new Type("????????????????"));
-  
+  public Types() {
+    t.add(new Type("fire"));
+    t.add(new Type("grass"));
+    t.add(new Type("water"));
+    t.add(new Type("electric"));
+    t.add(new Type("ground"));
+    t.add(new Type("rock"));
+    t.add(new Type("steel"));
+    t.add(new Type("flying"));
+    t.add(new Type("ice"));
+    t.add(new Type("ghost"));
+    t.add(new Type("dark"));
+    t.add(new Type("bug"));
+    t.add(new Type("psychic"));
+    t.add(new Type("normal"));
+    t.add(new Type("dragon"));
+    t.add(new Type("fairy"));
+    t.add(new Type("poison"));
+    t.add(new Type("fighting"));
+  }
+  String findType(int j, String s) {
+    String z ="";
+    for (int i = 0; i<t.size(); i++) {
+      if (i==j) {
+        z=t.get(j).getS();
+      s=z;
+      }
+    }
+    return s;
+  }
 }
-
-
-}//

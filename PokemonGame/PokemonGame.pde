@@ -15,10 +15,9 @@ Effectiveness poke = new Effectiveness();
 void setup() {
   size(600, 500);
   background(3, 1, 153);
-
-  typeOne=Math.random()*18+1;
+  typeOne=Math.random()*18;
   typeO=(int)typeOne;
-  typeTwo=Math.random()*18+1;
+  typeTwo=Math.random()*18;
   typeT=(int)typeTwo;
 
   img = loadImage("http://www.serebii.net/pokedex-bw/type/fighting.gif");//fighting 
@@ -61,13 +60,10 @@ void setup() {
   Types t = new Types();
   //tOne=t.get(typeO);
   //tTwo=t.get(typeT);
-t.findType(typeO,tOne);
-t.findType(typeT,tTwo);
-
+tOne=t.findType(typeO,tOne);
+tTwo = t.findType(typeT,tTwo);
   textSize(24);
-  text("fire", 400, 50);
-  text("water", 400, 100);
-
+  text("What is super-effective against\n" + t.findType(typeO,tOne) + " and " + t.findType(typeT,tTwo) + "?", 100,50);
   Buttons b = new Buttons();
 }
 void draw() {
@@ -135,8 +131,11 @@ void mousePressed() {
     move="fairy";
   }
   int o;
-  o=poke.isEffective(tOne,tTwo, move);
- 
+  int o1=poke.isEffective(tOne, move);
+  int o2=poke.isEffective(tTwo, move);
+  o=o1*o2;
+  
+
   if (o>1) {
     end=true;
     textSize(42);

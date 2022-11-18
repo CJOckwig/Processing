@@ -27,14 +27,3 @@ This is the code for one of 18 different types in my isEffective method. This co
 * **Caleb Ockwig** 
 
 
-## Acknowledgments
-I would like to thank the Pokemon company
-I would like to thank Game Freak
-I would like to thank my mom
-I would like to thank Dr. R.
-I would like to thank my good dog Maisy
-I would like to thank my (semi) good cat Stripes
-I would like to thank copy+paste
-I would also like to thank the lord, wherever he may be
-I would like to thank me?
-
